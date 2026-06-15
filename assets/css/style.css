@@ -170,6 +170,43 @@ img { max-width: 100%; }
 .story-card { padding: 38px; border-radius: 27px; background: var(--navy); color: #fff; box-shadow: var(--shadow); }
 .story-card blockquote { margin: 0; font-size: 1.48rem; font-weight: 700; line-height: 1.5; }
 .story-card p { color: #afc4bf; }
+.founder-section { background: #fff; }
+.founder-heading { max-width: 900px; margin-bottom: 46px; }
+.founder-story { display: grid; grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr); gap: 0; overflow: hidden; border: 1px solid #cfe1da; border-radius: 32px; background: var(--white); box-shadow: 0 26px 75px rgba(11, 41, 43, .1); }
+.founder-profile { position: relative; display: flex; min-width: 0; flex-direction: column; justify-content: space-between; padding: 42px; overflow: hidden; background: radial-gradient(circle at 100% 0, rgba(217, 245, 108, .18), transparent 36%), var(--navy); color: #fff; }
+.founder-profile::after { position: absolute; right: -82px; bottom: -95px; width: 220px; height: 220px; border: 34px solid rgba(217, 245, 108, .1); border-radius: 50%; content: ""; }
+.founder-profile-top, .founder-identity, .founder-badges { position: relative; z-index: 1; }
+.founder-profile-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.founder-avatar { display: grid; width: 126px; height: 126px; flex-shrink: 0; place-items: center; border: 1px solid rgba(255, 255, 255, .2); border-radius: 32px; background: linear-gradient(145deg, var(--green), #0d5e58); box-shadow: 0 20px 45px rgba(0, 0, 0, .2); }
+.founder-avatar span { color: #fff; font-size: 2.35rem; font-weight: 800; letter-spacing: -.07em; }
+.founder-status { max-width: 120px; padding: 7px 10px; border: 1px solid rgba(217, 245, 108, .3); border-radius: 999px; color: var(--lime); font-size: .61rem; font-weight: 800; line-height: 1.35; text-align: center; text-transform: uppercase; letter-spacing: .05em; }
+.founder-identity { margin-top: 68px; }
+.founder-role { margin: 0 0 8px; color: var(--lime); font-size: .72rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.founder-identity h3 { margin: 0 0 15px; font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.12; letter-spacing: -.045em; }
+.founder-expertise { margin: 0; color: #b5cbc6; font-size: .77rem; line-height: 1.75; }
+.founder-expertise span { padding-inline: 3px; color: var(--lime); }
+.founder-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 32px; }
+.founder-badges span { padding: 7px 10px; border: 1px solid rgba(255, 255, 255, .13); border-radius: 999px; background: rgba(255, 255, 255, .06); color: #d6e7e3; font-size: .65rem; font-weight: 700; }
+.founder-copy { min-width: 0; padding: 50px 54px; }
+.founder-bio { display: grid; gap: 16px; }
+.founder-bio p { margin: 0; color: #526b66; font-size: .95rem; }
+.founder-quote { position: relative; margin: 34px 0 25px; padding: 27px 29px 25px; border: 1px solid #cce7dc; border-radius: 20px; background: var(--mint-soft); }
+.founder-quote::before { position: absolute; top: -8px; left: 22px; color: var(--green); content: "“"; font-family: Georgia, serif; font-size: 4.2rem; line-height: 1; opacity: .2; }
+.founder-quote blockquote { position: relative; margin: 0; color: var(--navy); font-size: 1.1rem; font-weight: 700; line-height: 1.65; }
+.founder-quote figcaption { margin-top: 14px; color: var(--green-dark); font-size: .73rem; font-weight: 800; }
+.founder-quote figcaption span { color: var(--muted); font-weight: 600; }
+.founder-closing { margin: 0; color: var(--muted); font-size: .88rem; }
+.founder-closing strong { color: var(--navy); }
+.founder-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 21px; margin-top: 28px; }
+.founder-actions .text-link { font-size: .86rem; }
+.mission-section { background: var(--mint-soft); }
+.mission-head .section-title { max-width: 660px; }
+.mission-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 15px; }
+.mission-card { position: relative; min-width: 0; padding: 27px 24px; overflow: hidden; border: 1px solid #d2e5dd; border-radius: 21px; background: rgba(255, 255, 255, .86); }
+.mission-card::after { position: absolute; top: 0; right: 0; width: 48px; height: 4px; border-radius: 0 0 0 5px; background: linear-gradient(90deg, var(--green), var(--lime)); content: ""; }
+.mission-card > span { display: grid; width: 35px; height: 35px; place-items: center; border-radius: 11px; background: var(--navy); color: var(--lime); font-size: .68rem; font-weight: 900; }
+.mission-card h3 { margin: 25px 0 8px; color: var(--navy); font-size: 1.02rem; line-height: 1.35; }
+.mission-card p { margin: 0; color: var(--muted); font-size: .81rem; }
 .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .value-card { padding: 29px; border: 1px solid var(--line); border-radius: 22px; background: #fff; }
 .value-card span { color: var(--green); font-size: 1.6rem; font-weight: 900; }
@@ -268,6 +305,9 @@ img { max-width: 100%; }
   .nav-links .nav-cta { margin: 5px 0 0; text-align: center; }
   .menu-toggle { display: block; }
   .hero-grid, .split, .why-grid, .story-grid, .contact-grid, .problem-panel { grid-template-columns: 1fr; }
+  .founder-story { grid-template-columns: 1fr; }
+  .founder-profile { min-height: 500px; }
+  .mission-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { padding-top: 62px; }
   .hero-visual { width: 100%; max-width: 590px; min-height: 500px; margin: auto; }
   .card-grid, .module-grid { grid-template-columns: repeat(2, 1fr); }
@@ -306,6 +346,23 @@ img { max-width: 100%; }
   .floating-card.one { right: -4px; }
   .floating-card.two { bottom: 0; left: -3px; }
   .card-grid, .value-grid, .module-grid, .why-list, .audience-grid, .problem-list { grid-template-columns: 1fr; }
+  .founder-heading { margin-bottom: 32px; }
+  .founder-story { border-radius: 24px; }
+  .founder-profile { min-height: 0; padding: 28px 24px; }
+  .founder-profile-top { align-items: center; }
+  .founder-avatar { width: 94px; height: 94px; border-radius: 25px; }
+  .founder-avatar span { font-size: 1.85rem; }
+  .founder-status { max-width: 110px; font-size: .56rem; }
+  .founder-identity { margin-top: 42px; }
+  .founder-expertise { font-size: .72rem; }
+  .founder-copy { padding: 31px 23px 34px; }
+  .founder-bio { gap: 14px; }
+  .founder-bio p { font-size: .9rem; }
+  .founder-quote { margin-block: 27px 22px; padding: 24px 21px 21px; }
+  .founder-quote blockquote { font-size: 1rem; }
+  .founder-actions { align-items: stretch; flex-direction: column; gap: 12px; }
+  .founder-actions .btn, .founder-actions .text-link { width: 100%; justify-content: center; }
+  .mission-grid { grid-template-columns: 1fr; }
   .product-card { min-height: 285px; }
   .feature-row em { display: none; }
   .product-wide { grid-template-columns: 1fr; gap: 16px; }
