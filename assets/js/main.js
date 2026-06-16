@@ -1,17 +1,15 @@
 const mainNavItems = [
-  { label: 'Beranda', shortLabel: 'Beranda', homeHref: '#home', pageHref: 'index.html#home' },
-  { label: 'Tentang BIYA', shortLabel: 'Tentang', homeHref: '#tentang-biya', pageHref: 'index.html#tentang-biya' },
-  { label: 'Produk', shortLabel: 'Produk', homeHref: '#produk', pageHref: 'index.html#produk' },
-  { label: 'Kontak', shortLabel: 'Kontak', homeHref: '#kontak', pageHref: 'index.html#kontak' },
+  { label: 'Beranda', shortLabel: 'Beranda', href: 'index.html' },
+  { label: 'Tentang BIYA', shortLabel: 'Tentang', href: 'about.html' },
+  { label: 'Produk', shortLabel: 'Produk', href: 'products.html' },
+  { label: 'Kontak', shortLabel: 'Kontak', href: 'contact.html' },
 ];
 
 const mainNavContainers = document.querySelectorAll('[data-nav="main"]');
 mainNavContainers.forEach((container) => {
-  const isHomeContext = container.dataset.navContext === 'home';
-  container.innerHTML = mainNavItems.map((item) => {
-    const href = isHomeContext ? item.homeHref : item.pageHref;
-    return `<a href="${href}" data-mobile-label="${item.shortLabel}">${item.label}</a>`;
-  }).join('') + '<a class="nav-cta" href="#TODO-ACCOUNT-CENTER-LINK">Masuk Account Center</a>';
+  container.innerHTML = mainNavItems.map((item) => (
+    `<a href="${item.href}" data-mobile-label="${item.shortLabel}">${item.label}</a>`
+  )).join('') + '<a class="nav-cta" href="#TODO-ACCOUNT-CENTER-LINK">Masuk Account Center</a>';
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
@@ -35,10 +33,7 @@ if (menuToggle && navLinks) {
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links > a:not(.nav-cta)').forEach((link) => {
   const href = link.getAttribute('href') || '';
-  if (href === currentPage || href === `${currentPage}${window.location.hash}`) link.classList.add('active');
-  if (currentPage === 'index.html' && href.startsWith('#') && (!window.location.hash || href === window.location.hash)) {
-    if (href === '#home' || href === window.location.hash) link.classList.add('active');
-  }
+  if (href === currentPage) link.classList.add('active');
 });
 
 const revealElements = document.querySelectorAll('.reveal');
