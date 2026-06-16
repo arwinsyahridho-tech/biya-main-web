@@ -16,13 +16,11 @@
     <nav class="nav container" aria-label="Navigasi utama">
       <a class="logo" href="index.html" aria-label="BIYA Home"><span class="logo-mark">B</span><span class="logo-word">BIYA</span></a>
       <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#tentang-biya">Tentang BIYA</a><a href="#cerita-kami">Cerita Kami</a><a href="#produk">Produk</a><a href="#bos-fnb">BOS F&amp;B</a><a href="#kontak">Kontak</a>
-      </div>
+      <div class="nav-links" data-nav="main" data-nav-context="home"></div>
     </nav>
   </header>
   <main>
-    <section class="hero" id="tentang-biya">
+    <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Ekosistem digital untuk bisnis modern</p>
@@ -62,28 +60,17 @@
         </div>
         <div class="bos-parent reveal">
           <div class="bos-parent-head">
-            <div class="bos-title-group"><div class="card-icon bos-parent-icon" aria-label="BIYA Operating System"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/></svg></div><div><span class="badge">Core Product</span><h2>BIYA Operating System</h2></div></div>
-            <p>Sistem operasional digital dari BIYA untuk membantu berbagai jenis bisnis mengelola proses, data, stok, penjualan, keuangan, dan laporan dengan lebih rapi.</p>
+            <div class="bos-title-group"><div class="card-icon bos-parent-icon" aria-label="BIYA Operating System"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/></svg></div><div><span class="badge">Produk Utama BIYA</span><h2>BOS — BIYA Operating System</h2></div></div>
+            <p>Sistem operasional digital untuk membantu bisnis mengelola data, stok, biaya, penjualan, keuangan, dan laporan.</p>
           </div>
-          <div class="bos-family-label"><span>Produk di dalam BIYA Operating System</span></div>
+          <div class="bos-family-label"><span>Turunan / varian BOS</span></div>
           <div class="bos-product-grid">
-            <article class="bos-product-card is-active"><div class="bos-card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4v7M3 4v4a2 2 0 0 0 4 0V4M5 11v9M16 4v16M16 4c3 1.2 4.5 3.3 4.5 6.2H16"/><path d="M10 15.5c.8 1.6 2.4 2.5 4 2.5"/></svg></div><div class="badge-stack"><span class="badge">First Product</span><span class="status-label">Active / Available</span></div></div><div><h3>BOS F&amp;B</h3><p>Produk pertama dari BIYA Operating System untuk bisnis kuliner. Kelola HPP, bahan baku, stok, pembelian, menu, finance, POS, dan laporan penting dari HP, tablet, maupun desktop.</p></div><a class="btn btn-primary" href="bos-fnb.html">Kenali BOS F&amp;B <span aria-hidden="true">→</span></a></article>
+            <article class="bos-product-card is-active"><div class="bos-card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4v7M3 4v4a2 2 0 0 0 4 0V4M5 11v9M16 4v16M16 4c3 1.2 4.5 3.3 4.5 6.2H16"/><path d="M10 15.5c.8 1.6 2.4 2.5 4 2.5"/></svg></div><div class="badge-stack"><span class="badge">First Product</span><span class="status-label">Active / Available</span></div></div><div><h3>BOS F&amp;B</h3><p>Turunan pertama dari BOS untuk bisnis F&amp;B. Kelola HPP, bahan baku, stok, pembelian, menu, finance, POS, dan laporan penting dari HP, tablet, maupun desktop.</p></div><a class="btn btn-primary" href="bos-fnb.html">Coba BOS F&amp;B <span aria-hidden="true">→</span></a></article>
             <article class="bos-product-card is-coming"><div class="bos-card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14l-1-5H6L5 9Z"/><path d="M6 9v11h12V9M9 20v-6h6v6M4 9c0 1.5 1 2.5 2.5 2.5S9 10.5 9 9c0 1.5 1 2.5 3 2.5s3-1 3-2.5c0 1.5 1 2.5 2.5 2.5S20 10.5 20 9"/></svg></div><span class="badge soon">Coming Soon</span></div><div><h3>BOS Retail</h3><p>Sistem operasional untuk bisnis retail agar stok barang, transaksi, pembelian, penjualan, dan laporan lebih terpantau.</p></div><span class="btn btn-disabled" aria-disabled="true">Coming Soon</span></article>
             <article class="bos-product-card is-coming"><div class="bos-card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="3"/><path d="M4 7h16"/><circle cx="12" cy="14" r="4.5"/><path d="M9.5 14c1.2-1.1 2.6 1.1 5 0M7.5 5h.01M10 5h.01"/></svg></div><span class="badge soon">Coming Soon</span></div><div><h3>BOS Laundry</h3><p>Sistem operasional untuk bisnis laundry agar order, pelanggan, proses kerja, transaksi, dan laporan harian lebih rapi.</p></div><span class="btn btn-disabled" aria-disabled="true">Coming Soon</span></article>
           </div>
         </div>
-        <div class="other-products-block">
-          <div class="section-head"><div><p class="eyebrow">Produk &amp; layanan lainnya</p><h2 class="section-title">Produk &amp; layanan BIYA lainnya</h2></div><p class="section-copy">Selain BIYA Operating System, BIYA juga menyiapkan tools, pendampingan, dan pembelajaran untuk membantu bisnis bertumbuh lebih rapi.</p></div>
-          <div class="other-product-grid">
-            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5V3Z"/><path d="M14 3v5h5M8 12h8M8 16h5"/><path d="m16.5 14.5 3 3M18 13l-3 3"/></svg></div><span class="badge soon">Tools</span></div><h3>BIYA Template &amp; Tools</h3><p>Template dan tools praktis agar pekerjaan bisnis lebih cepat, rapi, dan konsisten.</p><span class="btn btn-disabled" aria-disabled="true">Segera hadir</span></article>
-            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H9l-5 4v-15Z"/><path d="M8 12l3-3 2.5 2 3-3M16.5 8.5H14"/></svg></div><span class="badge">Service</span></div><h3>BIYA Consulting</h3><p>Pendampingan untuk merapikan operasional, costing, SOP, dan pengembangan bisnis.</p><a class="btn btn-outline" href="contact.html">Lihat layanan</a></article>
-            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 12v5c3 2.3 7 2.3 10 0v-5M21 9v6"/></svg></div><span class="badge soon">Learning</span></div><h3>BIYA Academy</h3><p>Materi pembelajaran praktis untuk owner, tim, dan UMKM.</p><span class="btn btn-disabled" aria-disabled="true">Segera hadir</span></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bos-highlight" id="bos-fnb">
+        <div class="section bos-highlight" id="bos-fnb">
       <div class="container split">
         <div>
           <p class="product-kicker">Produk pertama dari ekosistem BIYA</p>
@@ -102,9 +89,21 @@
           <div class="feature-row"><i>04</i><div><strong>Siapkan bisnis berkembang</strong><small>Data lebih siap untuk keputusan owner.</small></div><em>GROWTH</em></div>
         </div>
       </div>
+        </div>
+        <div class="other-products-block">
+          <div class="section-head"><div><p class="eyebrow">Produk &amp; layanan lainnya</p><h2 class="section-title">Produk &amp; layanan BIYA lainnya</h2></div><p class="section-copy">Selain BIYA Operating System, BIYA juga menyiapkan tools, pendampingan, dan pembelajaran untuk membantu bisnis bertumbuh lebih rapi.</p></div>
+          <div class="other-product-grid">
+            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5V3Z"/><path d="M14 3v5h5M8 12h8M8 16h5"/><path d="m16.5 14.5 3 3M18 13l-3 3"/></svg></div><span class="badge soon">Tools</span></div><h3>BIYA Template &amp; Tools</h3><p>Template dan tools praktis agar pekerjaan bisnis lebih cepat, rapi, dan konsisten.</p><span class="btn btn-disabled" aria-disabled="true">Segera hadir</span></article>
+            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H9l-5 4v-15Z"/><path d="M8 12l3-3 2.5 2 3-3M16.5 8.5H14"/></svg></div><span class="badge">Service</span></div><h3>BIYA Consulting</h3><p>Pendampingan untuk merapikan operasional, costing, SOP, dan pengembangan bisnis.</p><a class="btn btn-outline" href="contact.html">Lihat layanan</a></article>
+            <article class="other-product-card reveal"><div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 12v5c3 2.3 7 2.3 10 0v-5M21 9v6"/></svg></div><span class="badge soon">Learning</span></div><h3>BIYA Academy</h3><p>Materi pembelajaran praktis untuk owner, tim, dan UMKM.</p><span class="btn btn-disabled" aria-disabled="true">Segera hadir</span></article>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="cerita-kami">
+
+
+    <section class="section" id="tentang-biya">
       <div class="container why-grid">
         <div><p class="eyebrow">Mengapa BIYA</p><h2 class="section-title">Lebih praktis untuk tim, lebih jelas untuk owner.</h2><p class="section-copy">BIYA membantu pekerjaan harian lebih terstruktur tanpa membuat teknologi terasa rumit.</p></div>
         <div class="why-list">
