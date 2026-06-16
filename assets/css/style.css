@@ -1025,3 +1025,86 @@ body { color: #102a2a; }
   .btn { min-height: 52px; }
   .hero { background: radial-gradient(circle at 90% 18%, rgba(6,182,212,.065), transparent 25%), linear-gradient(180deg,#fff 0%,#f7fbfa 100%); }
 }
+
+@media (max-width: 768px) {
+  .menu-toggle,
+  .hamburger,
+  .mobile-menu-button {
+    display: none !important;
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
+  .nav {
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    height: auto;
+    min-height: 0;
+    padding-block: 14px 10px;
+  }
+
+  .nav .logo {
+    align-self: flex-start;
+  }
+
+  .nav-links {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    width: 100%;
+    padding: 4px 0 2px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links > a {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 8px 12px;
+    border: 1px solid rgba(15, 118, 110, .14);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .75);
+    color: var(--biya-navy, var(--navy));
+    font-size: .82rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .nav-links > a:hover,
+  .nav-links > a.active {
+    background: rgba(15, 118, 110, .08);
+    color: var(--biya-teal, var(--green-dark));
+    box-shadow: inset 0 -2px var(--biya-cyan, var(--green));
+  }
+
+  .nav-links .nav-cta {
+    margin-left: 0;
+  }
+
+  .hero,
+  #tentang-biya,
+  #cerita-kami,
+  #produk,
+  #bos-fnb,
+  #kontak {
+    scroll-margin-top: 116px;
+  }
+}
