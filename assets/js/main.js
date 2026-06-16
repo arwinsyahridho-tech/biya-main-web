@@ -9,7 +9,7 @@ const mainNavContainers = document.querySelectorAll('[data-nav="main"]');
 mainNavContainers.forEach((container) => {
   container.innerHTML = mainNavItems.map((item) => (
     `<a href="${item.href}" data-mobile-label="${item.shortLabel}">${item.label}</a>`
-  )).join('') + '<a class="nav-cta" href="#TODO-ACCOUNT-CENTER-LINK">Masuk Account Center</a>';
+  )).join('') + '<a class="nav-cta" href="contact.html">Masuk Account Center</a>';
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
