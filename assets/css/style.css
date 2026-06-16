@@ -233,8 +233,8 @@ img { max-width: 100%; }
 .bos-product-card.is-coming { background: rgba(250, 252, 250, .86); }
 .bos-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 34px; }
 .bos-card-top .badge { max-width: calc(100% - 66px); text-align: center; }
-.badge-stack { display: flex; align-items: flex-end; flex-direction: column; gap: 7px; }
-.status-label { color: var(--green-dark); font-size: .67rem; font-weight: 800; }
+.status-badge { display: inline-flex; align-items: center; gap: 6px; max-width: calc(100% - 66px); padding: 6px 11px; border: 1px solid rgba(11, 155, 118, .28); border-radius: 999px; background: rgba(229, 255, 246, .74); color: #0f5f50; font-size: .68rem; font-weight: 800; line-height: 1; white-space: nowrap; }
+.status-badge::before { width: 6px; height: 6px; flex: 0 0 auto; border-radius: 50%; background: #0b9b76; content: ""; }
 .bos-product-card.is-active .card-icon { border-color: var(--green); background: var(--green); color: #fff; box-shadow: 0 10px 22px rgba(11, 155, 118, .18); }
 .bos-product-card.is-coming .card-icon { border-color: #dce5e1; background: #f0f4f2; color: #738580; }
 .product-kicker { margin: 0 0 7px !important; color: var(--green-dark) !important; font-size: .65rem !important; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -382,8 +382,8 @@ img { max-width: 100%; }
   .bos-product-grid { grid-template-columns: 1fr; }
   .bos-product-card, .bos-product-card.is-active { grid-column: auto; min-height: 365px; padding: 22px; }
   .bos-card-top { margin-bottom: 28px; }
-  .bos-card-top .badge { font-size: .65rem; }
-  .badge-stack { align-items: flex-end; }
+  .bos-card-top { align-items: center; gap: 10px; }
+  .bos-card-top .badge, .status-badge { font-size: .65rem; }
   .other-products-block { padding-top: 68px; }
   .other-product-grid { grid-template-columns: 1fr; }
   .other-product-card, .other-product-card:first-child { grid-column: auto; min-height: 300px; padding: 22px; }
@@ -983,7 +983,8 @@ body { color: #102a2a; }
 .badge { border-color: #c8e5de; background: #ecfdf5; color: #0f766e; }
 .badge::before { background: #059669; }
 .badge.soon { border-color: #d9e7e3; background: #eef5f3; color: #6b7f7a; }
-.status-label { color: #0f766e; }
+.status-badge { border-color: rgba(15, 118, 110, .26); background: rgba(236, 253, 245, .82); color: #0f5f50; }
+.status-badge::before { background: #059669; }
 
 .card-icon {
   border-color: #cce6df;
